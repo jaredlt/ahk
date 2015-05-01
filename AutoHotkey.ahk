@@ -1,10 +1,7 @@
-; =============== JARED'S CUSTOM AHK SCRIPTS ===============
-
-
 ; ==== PureText - Paste's plain text when using Win+V ====
 ; Hotkeys: Win+V
 
-#v::                             ; Text–only paste from ClipBoard
+#v::                             ; Text-only paste from ClipBoard
    Clip0 = %ClipBoardAll%
    ClipBoard = %ClipBoard%       ; Convert to text
    Send ^v                       ; For best compatibility: SendPlay
@@ -44,12 +41,6 @@ return
 
 ; ==== Hotstrings ====
 
-; --- msgscrum > Stan, Tomas, Nik, Angelo, Alberto, Paulo, Oliver (Emails) ---
-; Hotkeys: msgscrum+Tab
-
-:oc:msgscrum::Stanislavb@madesimplegroup.com;tomasj@madesimplegroup.com;AngeloG@madesimplegroup.com;Albertoc@madesimplegroup.com;Paulom@madesimplegroup.com;oliverj@madesimplegroup.com;borisl@madesimplegroup.com
-
-
 ; --- ac > Acceptance Criteria ---
 ; Hotkeys: ac+Tab
 
@@ -72,18 +63,22 @@ return
 
 :oc:refactor::{#}{#}Current state`r`r`r{#}{#}Problem`r`r`r{#}{#}Solution`r`r`r{#}{#}Refactor goal`r{Left 43}
 
+; --- scenario > Scenarios template ---
+; Hotkeys: scenario+Tab
+
+:oc:scenario::Scenario: `r`tGiven`rWhen`rThen`r{Left 21}
 
 ; --- auto close brackets and quotes ---
 ; ( => () AND [ => [] AND " => ""
 ;
-; NB. the asterisk between the first two colons means 
-; "ending character not required" (so you don't have to 
+; NB. the asterisk between the first two colons means
+; "ending character not required" (so you don't have to
 ; press eg. 'tab' to get it to work - see: https://www.autohotkey.com/docs/Hotstrings.htm)
 ;
-; if it gets annoying in some scenarios maybe take a look 
+; if it gets annoying in some scenarios maybe take a look
 ; at http://www.autohotkey.com/board/topic/44574-intelligent-auto-close-bracketbraceparen/
-
 
 :*:(::(){Left 1}
 :*:[::[]{Left 1}
 :*:"::""{Left 1}
+:*:'::''{Left 1}
