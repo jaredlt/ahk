@@ -1,0 +1,6 @@
+# Ignore all
+*
+
+# But..
+!.gitignore
+!AutoHotkey.ahk
