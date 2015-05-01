@@ -41,6 +41,8 @@ return
 
 ; ==== Hotstrings ====
 
+#Hotstring EndChars `t  ;trigger key is tab only (prevents eg. space etc from triggering the hotstrings)
+
 ; --- ac > Acceptance Criteria ---
 ; Hotkeys: ac+Tab
 
