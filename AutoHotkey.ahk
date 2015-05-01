@@ -63,6 +63,10 @@ return
 
 :oc:refactor::{#}{#}Current state`r`r`r{#}{#}Problem`r`r`r{#}{#}Solution`r`r`r{#}{#}Refactor goal`r{Left 43}
 
+; --- scenario > Scenarios template ---
+; Hotkeys: scenario+Tab
+
+:oc:scenario::Scenario: `r`tGiven`rWhen`rThen`r{Left 21}
 
 ; --- auto close brackets and quotes ---
 ; ( => () AND [ => [] AND " => ""
