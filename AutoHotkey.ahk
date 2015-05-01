@@ -78,7 +78,7 @@ return
 ; if it gets annoying in some scenarios maybe take a look
 ; at http://www.autohotkey.com/board/topic/44574-intelligent-auto-close-bracketbraceparen/
 
-
 :*:(::(){Left 1}
 :*:[::[]{Left 1}
 :*:"::""{Left 1}
+:*:'::''{Left 1}
