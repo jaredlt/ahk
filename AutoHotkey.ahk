@@ -51,7 +51,21 @@ return
 ; Hotkeys: us+Tab
 
 :oc:us::{#}{#}User Story`r`r- As a `r- I want `r- So that `r`r{#}{#}Requirements`r`r{Left 39}
+:oc:story::
+(
+##Story:
+(Situation; Motivations; Expected Outcomes)
+- When
+- I want
+- So that
 
+##Requirements
+##Dependencies
+##Wireframes
+##Feature file
+##Implementation strategy
+##Branch
+)
 
 ; --- bug > Bug Story Markdown Template ---
 ; Hotkeys: bug+Tab
@@ -77,6 +91,8 @@ return
 ;
 ; if it gets annoying in some scenarios maybe take a look
 ; at http://www.autohotkey.com/board/topic/44574-intelligent-auto-close-bracketbraceparen/
+;
+;TO-DO: Enclose selected text instead of replacing it
 
 :*:(::(){Left 1}
 :*:[::[]{Left 1}
