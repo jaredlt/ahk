@@ -1,7 +1,7 @@
 ; ==== PureText - Paste's plain text when using Win+V ====
 ; Hotkeys: Win+V
 
-#v::                             ; Text�only paste from ClipBoard
+#v::                             ; Text-only paste from ClipBoard
    Clip0 = %ClipBoardAll%
    ClipBoard = %ClipBoard%       ; Convert to text
    Send ^v                       ; For best compatibility: SendPlay
