@@ -1,3 +1,11 @@
+; AutoHotKey Initialization
+
+#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
+; #Warn  ; Enable warnings to assist with detecting common errors.
+SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
+SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
+
+
 ; ==== PureText - Paste's plain text when using Win+V ====
 ; Hotkeys: Win+V
 
@@ -83,6 +91,11 @@ return
 ; Hotkeys: scenario+Tab
 
 :oc:scenario::Scenario: `r`tGiven`rWhen`rThen`r{Left 21}
+
+; --- tm > ™ (trademark superscript)---
+; Hotkeys: tm+Tab
+
+:oc:tm::{ASC 0153}
 
 ; --- auto close brackets and quotes ---
 ; ( => () AND [ => [] AND " => ""
