@@ -19,17 +19,6 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 Return
 
 
-; ==== Launches a new Notepad window (or activates an existing one) ====
-; Hotkeys: Ctrl+Alt+N
-
-^!n::
-IfWinExist Untitled - Notepad
-	WinActivate
-else
-	Run Notepad
-return
-
-
 ; ==== Launches 1Password (or activates it) ====
 ; Hotkeys: Alt+p
 
