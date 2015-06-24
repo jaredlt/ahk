@@ -76,6 +76,12 @@ return
 
 :oc:refactor::{#}{#}Current state`r`r`r{#}{#}Problem`r`r`r{#}{#}Solution`r`r`r{#}{#}Refactor goal`r{Left 43}
 
+; --- spike > Spike template ---
+; Hotkeys: spike+Tab
+
+:oc:spike::{#}{#}Main questions`r`r- `r`r{#}{#}Card goals`r{Left 15}
+
+
 ; --- scenario > Scenarios template ---
 ; Hotkeys: scenario+Tab
 
