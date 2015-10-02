@@ -102,9 +102,12 @@ return
 ; if it gets annoying in some scenarios maybe take a look
 ; at http://www.autohotkey.com/board/topic/44574-intelligent-auto-close-bracketbraceparen/
 ;
-;TO-DO: Enclose selected text instead of replacing it
+; TO-DO: Enclose selected text instead of replacing it
 
-:*:(::(){Left 1}
-:*:[::[]{Left 1}
-:*:"::""{Left 1}
-:*:'::''{Left 1}
+; :*:(::(){Left 1}
+; :*:[::[]{Left 1}
+; :*:"::""{Left 1}
+; :*:'::''{Left 1}
+
+; don't auto-close when characters left and right are not spaces or the start of a new line
+; prevent auto when doing a sad face :( > :()
