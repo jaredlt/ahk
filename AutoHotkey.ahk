@@ -1,4 +1,4 @@
-; AutoHotKey Initialization
+﻿; AutoHotKey Initialization
 
 #NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 ; #Warn  ; Enable warnings to assist with detecting common errors.
@@ -87,10 +87,20 @@ return
 
 :oc:scenario::Scenario: `r`tGiven`rWhen`rThen`r{Left 21}
 
+; --- project > Project template ---
+; Hotkeys: project+Tab
+
+:oc:project::{#}{#}Problem/Opportunity`r`rThis section describes the problem or opportunity the project seeks to address using factual information.`r`r{#}{#}Goal`r`rA clear, concise statement of the project’s purpose and intended results. The project goal statement should be brief (one sentence).`r`r{#}{#}Objectives`r`rA list of what must be achieved in the project to realise the overall goal. The objectives can be considered “subgoals”.`r`r{#}{#}Outcomes/Success Criteria`r`r**We believe** that `r**Will result** in `r**We will know we have succeeded** when `r`r{#}{#}Assumptions & Constraints`r`rAssumptions are factors outside the scope of the project that could affect its success and which the authors of this document believe to be true. Constraints are factors that restrict the project team’s options.`r`r{#}{#}Risks`r`rRisks are something that may or may not happen in the future that could have a negative impact on the project.
+
 ; --- tm > ™ (trademark superscript)---
 ; Hotkeys: tm+Tab
 
 :oc:tm::{ASC 0153}
+
+; --- cool > "putting sunglasses on emoticons"
+; Hotkeys: cool+Tab
+
+:oc:cool::(•_•)`r( •_•)>⌐■-■`r(⌐■_■)
 
 ; --- auto close brackets and quotes ---
 ; ( => () AND [ => [] AND " => ""
@@ -111,3 +121,10 @@ return
 
 ; don't auto-close when characters left and right are not spaces or the start of a new line
 ; prevent auto when doing a sad face :( > :()
+
+; Fix CTRL + Backspace in Notepad
+; ref: http://superuser.com/questions/33142/ctrlbackspace-inserts-a-small-box-instead-of-erasing
+#IfWinActive ahk_class Notepad
+    ^Backspace::
+    Send ^+{Left}{Backspace}
+#IfWinActive
